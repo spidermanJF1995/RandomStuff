@@ -1,0 +1,1 @@
+This project simply tests to see if a number follows the "Collatz Conjecture" rule
