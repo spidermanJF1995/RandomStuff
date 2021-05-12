@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Katakana_RandFree_Activity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/KatakanaRandFreeDisplayChar"
+        android:layout_width="350sp"
+        android:layout_height="175dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/CharacterLabelBackgroundColor"
+        android:gravity="center"
+        android:text="@string/FreeChoiceActivityLabelHolder"
+        android:textColor="@color/CharacterLabelColor"
+        android:textSize="140sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/KatakanaRandFreeDisplayCorrectNumber"
+        android:layout_width="125sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="@string/CorrectNumberText"
+        android:textColor="@color/CorrectAnswerColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/KatakanaRandFreeDisplayWrongNumber"
+        android:layout_width="125sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="70dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="@string/WrongNumberText"
+        android:textColor="@color/WrongAnswerColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/KatakanaRandFreeDisplayCorrectNumberValue"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/CorrectAnswerColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/KatakanaRandFreeDisplayWrongNumberValue"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="70dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/WrongAnswerColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BackOneMenuButton"
+        android:layout_width="80dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/ButtonBackgroundColor"
+        android:gravity="center"
+        android:text="@string/GoBackButtonString"
+        android:textColor="@color/ButtonTextColor"
+        android:textScaleX="2.5"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/KatakanaRandFreeEnterAnswer"
+        android:maxLength="3"
+        android:layout_width="350dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/EnterAnswerTextBackGroundColor"
+        android:gravity="center"
+        android:text="@string/FreeChoiceActivityAnswerHolder"
+        android:textColor="@color/purple_200"
+        android:textSize="110sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KatakanaRandFreeDisplayChar" />
+
+    <Button
+        android:id="@+id/SubmitAnswerButton"
+        android:layout_width="132dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="460dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:onClick="checkAnswerOnClick"
+        android:text="@string/EnterAnswerButtonText"
+        android:textColor="@color/ButtonTextColor"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CorrectOrWrongText"
+        android:layout_width="158dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="468dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="@string/CorrectOrWrongText"
+        android:textColor="@color/CorrectAnswerColor"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ContinueButton"
+        android:layout_width="185sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="445dp"
+        android:backgroundTint="@color/ButtonBackgroundColor"
+        android:gravity="center"
+        android:onClick="continueButtonClick"
+        android:text="@string/ContinueButtonText"
+        android:textColor="@color/ButtonTextColor"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/KatakanaRandFreeDisplayCorrectNumber"
+        app:layout_constraintVertical_bias="0.793" />
+</androidx.constraintlayout.widget.ConstraintLayout>

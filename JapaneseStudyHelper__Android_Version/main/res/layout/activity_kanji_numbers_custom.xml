@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kanji_Numbers_Custom_Activity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/Kanji_Custom_Numbers_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/KanjiNumbersCustomTitle"
+        android:gravity="center"
+        android:textColor="#40DF14"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Kanji_Numbers_Custom_Number_EditText"
+        android:inputType="text"
+        android:layout_width="325dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="@string/KanjiNumbersCustomEditTextHint"
+
+        android:textColor="@color/purple_200"
+        android:textColorHint="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Kanji_Custom_Numbers_Title" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:onClick="convertButtonClick"
+        android:text="@string/KanjiNumbersConvertButtonText"
+        android:textColor="#E8D034"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Kanji_Numbers_Custom_Number_EditText" />
+
+    <TextView
+        android:id="@+id/japaneseVersionDisplayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/japaneseVersionDisplayLabel"
+        android:textColor="#12B507"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertButton" />
+
+    <HorizontalScrollView
+        android:id="@+id/japaneseVersionDisplayScroll"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/japaneseVersionDisplayLabel">
+
+        <TextView
+            android:id="@+id/japaneseVersionDisplayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#0307CD"
+            android:scrollHorizontally="true"
+            android:text="@string/japaneseVersionDisplayTextViewHolder"
+            android:textColor="#12B507"
+            android:textSize="25sp" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/kanjiDisplayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/KanjiNumbersCustomKanjiLabel"
+        android:textColor="#12B507"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/japaneseVersionDisplayScroll" />
+
+    <HorizontalScrollView
+        android:id="@+id/kanjiDisplayScroll"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kanjiDisplayLabel">
+
+        <TextView
+            android:id="@+id/kanjiDisplayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#0307CD"
+            android:scrollHorizontally="true"
+            android:text="@string/kanjiDisplayTextViewHolder"
+            android:textColor="#12B507"
+            android:textSize="25sp" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/hiraganaDisplayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/KanjiNumbersCustomHiraganaLabel"
+        android:textColor="#12B507"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kanjiDisplayScroll" />
+
+    <HorizontalScrollView
+        android:id="@+id/hiraganaDisplayScroll"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hiraganaDisplayLabel">
+
+        <TextView
+            android:id="@+id/hiraganaDisplayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#0307CD"
+            android:scrollHorizontally="true"
+            android:text="@string/hiraganaDisplayTextViewHolder"
+            android:textColor="#12B507"
+            android:textSize="25sp" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/romanjiDisplayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/KanjiNumbersCustomRomanjiLabel"
+        android:textColor="#12B507"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hiraganaDisplayScroll" />
+
+    <HorizontalScrollView
+        android:id="@+id/romanjiDisplayScroll"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/romanjiDisplayLabel"
+        app:layout_constraintHorizontal_bias="0.50">
+
+        <TextView
+            android:id="@+id/romanjiDisplayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#0307CD"
+            android:scrollHorizontally="true"
+            android:text="@string/romanjiDisplayTextViewHolder"
+            android:textColor="#12B507"
+            android:textSize="25sp" />
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
