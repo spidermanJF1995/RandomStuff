@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">Japanese_Study_Helper</string>
+
+    <string name="MainActivityTitleString">
+                        Welcome To The Japanese Study Helper Android Edition!\n
+                                Glad to see you like Japanese.\n
+                                        (You are a weeb…)\n
+                                    Please pick an option below
+    </string>
+
+    <string name="HiraganaActivityWelcomeString">
+                          Welcome To The Hiragana Section!\n
+                               Please Pick An Option
+    </string>
+
+    <string name="KatakanaActivityWelcomeString">
+                          Welcome To The Katakana Section!\n
+                               Please Pick An Option
+    </string>
+
+    <string name="HiraganaAndKatakanaActivityWelcomeString">
+                          Welcome To The Hiragana And Katakana Section!\n
+                               Please Pick An Option
+    </string>
+
+    <string name="KanjiActivityWelcomeString">
+                          Welcome To The Kanji Section!\n
+                               Please Pick An Option
+    </string>
+
+    <string name="HiraganaCharactersActivityWelcomeString">
+                          Welcome To The Hiragana Characters Section!\n
+                               Please Pick An Option
+    </string>
+
+    <string name="KatakanaCharactersActivityWelcomeString">
+                          Welcome To The Katakana Characters Section!\n
+                                    Please Pick An Option
+    </string>
+
+    <string name="HiraganaAndKatakanaCharactersActivityWelcomeString">
+                          Welcome To The Hiragana And Katakana Characters Section!\n
+                                    Please Pick An Option
+    </string>
+
+    <string name="KanjiNumbersActivityWelcomeString">
+                          Welcome To The Kanji Numbers Section!\n
+                                 Please Pick An Option
+    </string>
+
+    <string name="GoBackButtonString">
+                &#8617;
+    </string>
+
+    <string name="ShouldNotSeeThisText">
+                Should Not Be Seeing This Text!
+    </string>
+
+    <string name="CorrectNumberText"><![CDATA[
+                Correct —>
+    ]]></string>
+
+    <string name="WrongNumberText"><![CDATA[
+                Wrong —>
+    ]]></string>
+
+    <string name="CorrectNumberValueText">
+                &#160;
+    </string>
+
+    <string name="WrongNumberValueText">
+                &#160;
+    </string>
+
+    <string name="CorrectOrWrongText">
+                Correct!
+    </string>
+
+    <string name="ContinueButtonText">
+                Continue
+    </string>
+
+    <string name="EnterAnswerButtonText">
+                Submit Answer
+    </string>
+    <string name="AllCorrectText">
+                Congratulations! You got all of the answers correct!
+    </string>
+
+    <string name="MissedSomeCharactersText">
+                Looks like you missed some characters. Here they are to help you study:
+    </string>
+
+    <string name="CharactersActivityButtonString">Characters</string>
+
+    <string name="AlphabeticalOrderMultipleChoiceButtonString">In Alphabetical Order and Multiple Choice</string>
+    <string name="AlphabeticalOrderFreeChoiceButtonString">In Alphabetical Order and Free Choice</string>
+    <string name="RandomOrderMultipleChoiceButtonString">In Random Order and Multiple Choice</string>
+    <string name="RandomOrderFreeChoiceButtonString">In Random Order and Free Choice</string>
+
+    <string name="MultipleChoiceActivityLabelHolder">きゃ</string>
+    <string name="MultipleChoiceActivityTopLeftLabelHolder">Kya</string>
+    <string name="MultipleChoiceActivityTopRightLabelHolder">Kyu</string>
+    <string name="MultipleChoiceActivityBottomLeftLabelHolder">Kyo</string>
+    <string name="MultipleChoiceActivityBottomRightLabelHolder">Sha</string>
+
+    <string name="FreeChoiceActivityLabelHolder">きゃ</string>
+    <string name="FreeChoiceActivityAnswerHolder">Cha</string>
+    <string name="FreeChoiceActivityTopLeftLabelHolder">Kya</string>
+    <string name="FreeChoiceActivityTopRightLabelHolder">Kyu</string>
+    <string name="FreeChoiceActivityBottomLeftLabelHolder">Kyo</string>
+    <string name="FreeChoiceActivityBottomRightLabelHolder">Sha</string>
+
+    <string name="NumbersActivityButtonString">Numbers</string>
+
+    <string name="NumbersAscendingActivityButtonString">Bases Ascending</string>
+    <string name="NumbersDescendingActivityButtonString">Bases Descending</string>
+    <string name="NumbersWithinBoundsActivityButtonString">Random Numbers Within Bounds</string>
+    <string name="enterCustomNumberActivityButtonString">Enter A Custom Number</string>
+
+    <string name="KanjiNumbersCustomTitle">Converting Numbers From Numerical To Text</string>
+    <string name="KanjiNumbersCustomEditTextHint">Enter Number Here…\nCommas are optional…</string>
+    <string name="KanjiNumbersConvertButtonText">Convert</string>
+
+    <string name="KanjiNumbersCustomKanjiLabel">Kanji:</string>
+    <string name="KanjiNumbersCustomHiraganaLabel">Hiragana:</string>
+    <string name="KanjiNumbersCustomRomanjiLabel">Romanji:</string>
+    <string name="japaneseVersionDisplayLabel">Japanese Version Of Number:</string>
+
+    <string name="japaneseVersionDisplayTextViewHolder">9999,9999,9999,9999</string>
+    <string name="kanjiDisplayTextViewHolder">九千九百九十九兆九千九百九十九億九千九百九十九万九千九百九十九</string>
+    <string name="hiraganaDisplayTextViewHolder">きゅうせんきゅうひゃくきゅうじゅうきゅうちょうきゅうせんきゅうひゃくきゅうじゅうきゅうおくきゅうせんきゅうひゃくきゅうじゅうきゅうまんきゅうせんきゅうひゃくきゅうじゅうきゅう</string>
+    <string name="romanjiDisplayTextViewHolder">Kyū Sen Kyū Hyaku Kyū Jū Kyū Chō Kyū Sen Kyū Hyaku Kyū Jū Kyū Oku Kyū Sen Kyū Hyaku Kyū Jū Kyū Man Kyū Sen Kyū Hyaku Kyū Jū Kyū</string>
+
+
+    <string name="TimeActivityButtonString">Time</string>
+</resources>

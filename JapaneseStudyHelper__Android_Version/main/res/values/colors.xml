@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="ButtonBackgroundColor">#FF090157</color>
+    <color name="ButtonTextColor">#FF00FF17</color>
+    <color name="ButtonPressedColor">#FF014357</color>
+    <color name="ButtonBorderColor">#FF707070</color>
+    <color name="ButtonDisabledColor">#35333d</color>
+
+    <color name="TextColor">#00FFFF</color>
+    <color name="AnswerChoiceColor">#00FFFF</color>
+    <color name="CharacterLabelColor">#00FFFF</color>
+    <color name="WrongAnswerColor">#8B0000</color>
+    <color name="CorrectAnswerColor">#008000</color>
+    <color name="CharacterLabelBackgroundColor">#FF0C0223</color>
+
+    <color name="GradientStartColor">#000080</color>
+    <color name="GradientCenterColor">#8A2BE2</color>
+    <color name="GradientEndColor">#10CD10</color>
+
+    <color name="EnterAnswerTextBackGroundColor">#383838</color>
+
+</resources>
